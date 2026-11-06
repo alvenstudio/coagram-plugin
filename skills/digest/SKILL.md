@@ -18,7 +18,8 @@ description: "Разбор непрочитанного и сводки по ч�
    его `label`. `status` не `ready` — аккаунт не вошёл в Telegram: скажи, что войти нужно в кабинете Coagram, и
    переходи к остальным.
 2. Непрочитанное: `telegram_chats` с `unread_only: true`; следующая страница — `cursor` из `next_cursor`. У чата:
-   `unread_count`, `unread_mentions`, `muted`, `forum`, `archived`, `last_message`. Архив — отдельно, с
+   `unread_count`, `unread_mentions`, `muted`, `forum`, `archived`, `last_message`. Пустые и нулевые поля ответ не
+   содержит: нет `unread_count` — непрочитанных нет, нет `muted` — звук включён. Архив — отдельно, с
    `archived: true`, если человек о нём просит.
 3. Порядок разбора: чаты с упоминаниями (`unread_mentions`) и личные (`type: private`) → группы без `muted` →
    приглушённые группы → каналы. Каналы и приглушённые чаты с сотнями сообщений сводятся к 1–3 темам.

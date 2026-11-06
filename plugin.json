@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "coagram",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Telegram в ИИ-агенте через Coagram: непрочитанное и сводки, поиск сообщений и файлов, вложения, экспорт истории, отправка с подтверждением, черновики, закреп, реакции, темы форумов и диагностика доступа. MCP-сервер Coagram и навыки к нему.",
   "author": {
     "name": "Coagram",

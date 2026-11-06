@@ -20,9 +20,13 @@ description: "Отправка в Telegram через Coagram — только �
 
 1. `telegram_accounts` → `account_id`; несколько аккаунтов — уточни, с какого писать.
 2. Чат: `telegram_chats` с `query`; публичный — `telegram_chat_info` с `username`. Совпадений несколько — покажи их и
-   спроси. «Избранное» (Saved Messages) — личный чат аккаунта с самим собой: `telegram_chats` с `query`
-   `Saved Messages`, у него `type: private`.
-3. Ответ на сообщение — его `id` из `telegram_history` или `telegram_get_message` (по ссылке). Не путай `id` с
+   спроси.
+3. «Избранное» (Saved Messages) — личный чат аккаунта с самим собой. Поиск по названию его не находит.
+   - Подключение ко всем чатам (`chat_access: "all"`): `tdlib_getMe` → `id` аккаунта; это и есть `chat_id`
+     «Избранного». Проверь `tdlib_getChat` с этим `chat_id`: `type.user_id` должен совпасть с `id`.
+   - Подключение с выбором чатов (`chat_access: "selected"`): `tdlib_*` недоступны. «Избранное» есть, только если
+     человек выбрал его для подключения; какой из личных чатов — спроси человека, не угадывай.
+4. Ответ на сообщение — его `id` из `telegram_history` или `telegram_get_message` (по ссылке). Не путай `id` с
    числом из ссылки t.me (`server_id`).
 
 ## Действия
