@@ -1,0 +1,20 @@
+{
+  "name": "coagram",
+  "interface": {
+    "displayName": "Coagram"
+  },
+  "plugins": [
+    {
+      "name": "coagram",
+      "source": {
+        "source": "local",
+        "path": "./codex"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

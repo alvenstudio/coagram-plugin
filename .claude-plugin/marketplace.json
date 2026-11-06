@@ -1,0 +1,17 @@
+{
+  "name": "coagram",
+  "owner": {
+    "name": "Coagram",
+    "url": "https://coagram.alven.studio"
+  },
+  "metadata": {
+    "description": "Плагин Coagram: Telegram в ИИ-агенте — MCP-сервер и навыки"
+  },
+  "plugins": [
+    {
+      "name": "coagram",
+      "source": "./",
+      "description": "Telegram в ИИ-агенте через Coagram: непрочитанное и сводки, поиск сообщений и файлов, вложения, экспорт истории, отправка с подтверждением, черновики, закреп, реакции, темы форумов и диагностика доступа. MCP-сервер Coagram и навыки к нему."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "coagram": {
+      "type": "http",
+      "url": "https://coagram.alven.studio/mcp"
+    }
+  }
+}
